@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nombre del Juego</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; background-color: #000; overflow: hidden; }
+        #game-container { width: 100%; height: 100%; }
+    </style>
+</head>
+<body>
+    <div id="game-container"></div>
+
+    <script>
+        EJS_player = '#game-container';
+        
+        // Cambia esto según el sistema:
+        // 'gb' = Game Boy
+        // 'gbc' = Game Boy Color
+        // 'nes' = Nintendo Entertainment System
+        // 'snes' = Super Nintendo
+        // 'n64' = Nintendo 64
+        // 'gba' = Game Boy Advance
+        EJS_core = 'gb'; 
+        
+        // Nombre EXACTO del archivo ROM que subiste
+        EJS_gameUrl = 'juego.gb'; 
+        
+        EJS_startOnLoaded = true;
+        EJS_pathtodata = 'https://cdn.jsdelivr.net/gh/ethanaobrien/emulatorjs@main/data/';
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/ethanaobrien/emulatorjs@main/data/loader.js"></script>
+</body>
+</html>
